@@ -1,1 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Field Day | Michiana Amateur Radio Club W9AB</title>
+
+<meta name="description"
+content="ARRL Field Day with the Michiana Amateur Radio Club W9AB in Mishawaka, Indiana. Information about MARC Field Day and photos from Field Day 2026.">
+
+<style>
+
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    color: #1e4a70;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: linear-gradient(135deg,#10263f,#1e4a70);
+    color: white;
+    padding: 35px 20px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.callsign {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd34e;
+    margin: 3px 0;
+}
+
+.header-text p {
+    margin: 4px 0;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    background: #091a2b;
+    text-align: center;
+    padding: 13px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+}
+
+nav a:hover {
+    color: #ffd34e;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   FIELD DAY HERO
+   ========================= */
+
+.hero {
+    background: linear-gradient(135deg,#173b5d,#28628e);
+    color: white;
+    border-radius: 12px;
+    padding: 45px 30px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,.12);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0 0 5px;
+}
+
+.hero .year {
+    color: #ffd34e;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button {
+    display: inline-block;
+    background: #ffd34e;
+    color: #10263f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: #ffe17c;
+}
+
+.button-blue {
+    display: inline-block;
+    background: #1e4a70;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.button-blue:hover {
+    background: #28628e;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+   ========================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.10);
+    border-top: 5px solid #1e4a70;
+}
+
+.card h3 {
+    color: #173b5d;
+    margin-top: 0;
+}
+
+
+/* =========================
+   ABOUT FIELD DAY
+   ========================= */
+
+.about {
+    background: white;
+    margin-top: 35px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.10);
+}
+
+.about h2 {
+    color: #173b5d;
+    margin-top: 0;
+}
+
+
+/* =========================
+   PHOTO GALLERY
+   ========================= */
+
+.gallery-section {
+    margin-top: 45px;
+}
+
+.gallery-section h2 {
+    color: #173b5d;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.gallery-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 22px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,.10);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-caption {
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #173b5d;
+}
+
+
+/* =========================
+   JOIN US SECTION
+   ========================= */
+
+.join {
+    margin-top: 45px;
+    background: #173b5d;
+    color: white;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+}
+
+.join h2 {
+    margin-top: 0;
+}
+
+.join a.email {
+    color: #ffd34e;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #091a2b;
+    color: #cdd6df;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 45px;
+}
+
+footer strong {
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:700px) {
+
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 125px;
+        height: 125px;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .callsign {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 9px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .photo-card img {
+        height: auto;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
+<header>
+
+<div class="header-inner">
+
+<img
+src="logo-AQExgV0nKkuRzrO9.png"
+alt="Michiana Amateur Radio Club Logo"
+class="logo">
+
+<div class="header-text">
+
+<h1>Michiana Amateur Radio Club</h1>
+
+<div class="callsign">W9AB</div>
+
+<p>Serving Amateur Radio in Michiana</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="index.html#about">About MARC</a>
+
+<a href="index.html#meetings">Meetings</a>
+
+<a href="index.html#net">Club Net</a>
+
+<a href="fieldday.html">Field Day</a>
+
+<a href="index.html#contact">Contact</a>
+
+</nav>
+
+
+<!-- =========================
+     MAIN CONTENT
+     ========================= -->
+
+<main class="container">
+
+
+<!-- FIELD DAY HERO -->
+
+<section class="hero">
+
+<h2>ARRL Field Day</h2>
+
+<div class="year">June 26–27, 2027</div>
+
+<p>
+Join the <strong>Michiana Amateur Radio Club — W9AB</strong>
+for one of amateur radio's biggest annual operating events.
+</p>
+
+<p>
+Field Day brings amateur radio operators together for
+on-the-air activity, emergency preparedness, technical
+experimentation and fellowship.
+</p>
+
+<a
+class="button"
+href="https://www.arrl.org/field-day"
+target="_blank"
+rel="noopener">
+Learn About ARRL Field Day
+</a>
+
+</section>
+
+
+<!-- EVENT INFORMATION -->
+
+<section class="info-grid">
+
+
+<div class="card">
+
+<h3>📅 2027 Field Day</h3>
+
+<p>
+<strong>Saturday &amp; Sunday<br>
+June 26–27, 2027</strong>
+</p>
+
+<p>
+Field Day operations begin Saturday at
+<strong>18:00 UTC</strong>
+(2:00 PM Eastern Daylight Time).
+</p>
+
+<p>
+Operations run for 24 or 27 hours depending on setup and
+start time under the Field Day rules.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📍 MARC Field Day Location</h3>
+
+<p>
+<strong>Michiana Walleye Association</strong><br>
+Mishawaka, Indiana
+</p>
+
+<p>
+MARC uses the Michiana Walleye Association property for
+our Field Day activities.
+</p>
+
+<a
+class="button-blue"
+href="https://www.google.com/maps/place/Michiana+Walleye+Association/@41.6965042,-86.1209978,17z/data=!3m1!4b1!4m6!3m5!1s0x8816d02695379c85:0xe998971c3fefd24e!8m2!3d41.6965042!4d-86.1209978!16s%2Fg%2F11c5wlvjs6"
+target="_blank"
+rel="noopener">
+View Location on Google Maps
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h3>📻 Get On The Air</h3>
+
+<p>
+Field Day is an opportunity for MARC members to operate
+together, try different stations and antennas, and share
+amateur radio with visitors.
+</p>
+
+<p>
+It's also a great opportunity to meet other local amateur
+radio operators and learn more about operating outside of
+the normal home station.
+</p>
+
+</div>
+
+
+</section>
+
+
+<!-- ABOUT FIELD DAY -->
+
+<section class="about">
+
+<h2>What is Field Day?</h2>
+
+<p>
+ARRL Field Day is an annual amateur radio event that brings
+radio operators together throughout the United States and
+Canada.
+</p>
+
+<p>
+During Field Day, amateur radio clubs and individual operators
+set up stations and make contacts with other Field Day stations.
+The event combines on-the-air operating with emergency
+preparedness, technical skills, experimentation, community
+outreach and the social side of amateur radio.
+</p>
+
+<p>
+For MARC, Field Day is also an opportunity for club members
+and visitors to spend time together, operate radio and share
+the amateur radio hobby with the Michiana community.
+</p>
+
+<p>
+For complete rules and official Field Day information, visit
+the ARRL Field Day website.
+</p>
+
+<a
+class="button-blue"
+href="https://www.arrl.org/field-day"
+target="_blank"
+rel="noopener">
+Official ARRL Field Day Information
+</a>
+
+</section>
+
+
+<!-- =========================
+     2026 PHOTO GALLERY
+     ========================= -->
+
+<section class="gallery-section">
+
+<h2>MARC Field Day 2026</h2>
+
+<p class="gallery-intro">
+A look back at the Michiana Amateur Radio Club's
+2026 Field Day activities.
+</p>
+
+
+<div class="gallery">
+
+
+<!-- PHOTO 1 -->
+
+<div class="photo-card">
+
+<img
+src="FD 2026 Bruno.jpg"
+alt="MARC Field Day 2026">
+
+<div class="photo-caption">
+MARC Field Day 2026
+</div>
+
+</div>
+
+
+<!-- PHOTO 2 -->
+
+<div class="photo-card">
+
+<img
+src="FD 2026 Dan Ceaser.jpg"
+alt="MARC Field Day 2026">
+
+<div class="photo-caption">
+MARC Field Day 2026
+</div>
+
+</div>
+
+
+<!-- PHOTO 3 -->
+
+<div class="photo-card">
+
+<img
+src="FD 2026 JC.jpg"
+alt="MARC Field Day 2026">
+
+<div class="photo-caption">
+MARC Field Day 2026
+</div>
+
+</div>
+
+
+<!-- PHOTO 4 -->
+
+<div class="photo-card">
+
+<img
+src="FD 2026 Jeff antenna.jpg"
+alt="MARC Field Day 2026 antenna activities">
+
+<div class="photo-caption">
+MARC Field Day 2026
+</div>
+
+</div>
+
+
+<!-- PHOTO 5 -->
+
+<div class="photo-card">
+
+<img
+src="FD 2026 Jeff.jpg"
+alt="MARC Field Day 2026">
+
+<div class="photo-caption">
+MARC Field Day 2026
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     JOIN US
+     ========================= -->
+
+<section class="join">
+
+<h2>Join MARC for Field Day</h2>
+
+<p>
+Whether you're an experienced amateur radio operator,
+a newly licensed ham, or simply interested in learning
+more about amateur radio, Field Day is a great opportunity
+to visit MARC and see amateur radio in action.
+</p>
+
+<p>
+Additional information about MARC's 2027 Field Day plans
+will be posted here as the event approaches.
+</p>
+
+<p>
+Questions? Email
+<a class="email" href="mailto:w9ab@w9ab.org">
+w9ab@w9ab.org
+</a>
+</p>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+<p>
+<strong>Michiana Amateur Radio Club — W9AB</strong>
+</p>
+
+<p>
+South Bend • Mishawaka • Michiana
+</p>
+
+<p>
+Amateur Radio • Community • Public Service
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
