@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,6 +12,10 @@
 content="Michiana Amateur Radio Club - W9AB. Serving amateur radio operators in the South Bend, Mishawaka and Michiana area.">
 
 <style>
+
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
 
 * {
     box-sizing: border-box;
@@ -23,7 +29,10 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
     background: linear-gradient(135deg,#10263f,#1e4a70);
@@ -66,7 +75,10 @@ header {
     font-size: 1.1rem;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+   ========================= */
 
 nav {
     background: #091a2b;
@@ -85,13 +97,21 @@ nav a:hover {
     color: #ffd34e;
 }
 
-/* MAIN */
+
+/* =========================
+   MAIN PAGE
+   ========================= */
 
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
+
+
+/* =========================
+   WELCOME SECTION
+   ========================= */
 
 .welcome {
     text-align: center;
@@ -105,7 +125,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* FEATURE CARDS */
+
+/* =========================
+   INFORMATION CARDS
+   ========================= */
 
 .cards {
     display: grid;
@@ -126,25 +149,36 @@ nav a:hover {
     margin-top: 0;
 }
 
-/* CLUB PHOTO */
+.card a {
+    color: #1e4a70;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CLUB PHOTO SECTION
+   ========================= */
 
 .club-feature {
-    margin-top: 40px;
+    margin: 40px auto 0;
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,.10);
+    padding-top: 5px;
 }
 
 .club-feature img {
     width: 100%;
-    max-height: 520px;
-    object-fit: cover;
+    max-width: 750px;
+    height: auto;
     display: block;
+    margin: 25px auto 0;
+    border-radius: 8px;
 }
 
 .feature-text {
-    padding: 25px;
+    padding: 25px 35px 30px;
     text-align: center;
 }
 
@@ -153,7 +187,23 @@ nav a:hover {
     margin-top: 0;
 }
 
-/* CONTACT */
+
+/* =========================
+   WEBSITE NOTICE
+   ========================= */
+
+.notice {
+    margin-top: 30px;
+    background: #fff5cf;
+    border-left: 5px solid #e0ad00;
+    padding: 18px 22px;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
 
 .contact {
     margin-top: 40px;
@@ -173,17 +223,10 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* NOTICE */
 
-.notice {
-    margin-top: 30px;
-    background: #fff5cf;
-    border-left: 5px solid #e0ad00;
-    padding: 18px 22px;
-    border-radius: 5px;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     background: #091a2b;
@@ -197,7 +240,10 @@ footer strong {
     color: white;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media(max-width:700px) {
 
@@ -215,16 +261,36 @@ footer strong {
         font-size: 1.8rem;
     }
 
+    .callsign {
+        font-size: 1.7rem;
+    }
+
     nav a {
         display: inline-block;
         margin: 5px 9px;
     }
+
+    .club-feature img {
+        width: calc(100% - 30px);
+        margin-top: 15px;
+    }
+
+    .feature-text {
+        padding: 20px;
+    }
 }
 
 </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+     ========================= -->
 
 <header>
 
@@ -250,6 +316,10 @@ class="logo">
 </header>
 
 
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -267,8 +337,14 @@ class="logo">
 </nav>
 
 
+<!-- =========================
+     MAIN CONTENT
+     ========================= -->
+
 <main class="container">
 
+
+<!-- WELCOME -->
 
 <section class="welcome" id="about">
 
@@ -288,6 +364,8 @@ radio community in Michiana.
 
 </section>
 
+
+<!-- INFORMATION CARDS -->
 
 <section class="cards">
 
@@ -352,10 +430,12 @@ and other amateur radio activities throughout the year.
 </section>
 
 
+<!-- CLUB PHOTO -->
+
 <section class="club-feature">
 
 <img
-src="meeting-picture-1-YZ98GEljLgiWR0wz.jpg"
+src="meeting-picture-1-YZ98GEIjLgiWR0wz.jpg"
 alt="Michiana Amateur Radio Club members">
 
 <div class="feature-text">
@@ -373,6 +453,8 @@ volunteer and spend time with other people interested in radio.
 </section>
 
 
+<!-- WEBSITE NOTICE -->
+
 <div class="notice">
 
 <strong>Website Update:</strong>
@@ -383,6 +465,8 @@ events and member resources will be added.
 
 </div>
 
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -404,6 +488,10 @@ Email us at
 </main>
 
 
+<!-- =========================
+     FOOTER
+     ========================= -->
+
 <footer>
 
 <p>
@@ -422,4 +510,5 @@ Amateur Radio • Community • Public Service
 
 
 </body>
+
 </html>
