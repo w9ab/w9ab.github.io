@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Michiana Amateur Radio Club | W9AB</title>
+  <meta name="description" content="Official website of the Michiana Amateur Radio Club (MARC), W9AB, serving amateur radio operators in the Michiana area.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #142b45;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 5px;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #dbe7f3;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: #0c1d30;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      background: #fff3cd;
+      border-bottom: 1px solid #e5d28a;
+      text-align: center;
+      padding: 14px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .intro h2 {
+      color: #142b45;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      color: #142b45;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e3e8ed;
+      padding-bottom: 8px;
+    }
+
+    .card strong {
+      color: #111;
+    }
+
+    .contact {
+      margin-top: 35px;
+      background: #142b45;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0c1d30;
+      color: #cbd5df;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header h2 {
+        font-size: 1.25rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Michiana Amateur Radio Club</h1>
+  <h2>W9AB</h2>
+  <p>Serving Amateur Radio in the Michiana Area</p>
+</header>
+
+<nav>
+  <a href="#about">About MARC</a>
+  <a href="#meetings">Meetings</a>
+  <a href="#net">Club Net</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="notice">
+  <strong>Website Update:</strong>
+  The MARC website is currently being rebuilt. Club information and additional
+  resources will be restored and expanded here.
+</div>
+
+<main class="container">
+
+  <section class="intro" id="about">
+    <h2>Welcome to MARC</h2>
+
+    <p>
+      Welcome to the official website of the
+      <strong>Michiana Amateur Radio Club (MARC)</strong>,
+      amateur radio callsign <strong>W9AB</strong>.
+    </p>
+
+    <p>
+      MARC brings together amateur radio operators from the Michiana area
+      for fellowship, education, public service, operating events and
+      amateur radio activities.
+    </p>
+  </section>
+
+  <section class="cards">
+
+    <div class="card" id="meetings">
+      <h3>Club Meetings</h3>
+
+      <p>
+        <strong>Location:</strong><br>
+        Grace Brethren Church<br>
+        1715 E. Day Road<br>
+        Mishawaka, Indiana 46545
+      </p>
+
+      <br>
+
+      <p>
+        Regular club meetings and special programs are announced through
+        MARC communications and the club's social media.
+      </p>
+    </div>
+
+    <div class="card" id="net">
+      <h3>MARC Wednesday Night Net</h3>
+
+      <p>
+        <strong>Every Wednesday</strong><br>
+        7:00 PM Eastern
+      </p>
+
+      <br>
+
+      <p>
+        <strong>K9DEW Repeater</strong><br>
+        147.330 MHz<br>
+        +0.600 MHz offset<br>
+        131.8 Hz tone
+      </p>
+
+      <br>
+
+      <p>
+        Amateur radio operators in the area are encouraged to check in.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Amateur Radio Activities</h3>
+
+      <p>
+        MARC members participate in amateur radio activities throughout
+        Michiana, including operating events, Field Day, educational
+        programs, public service activities and local amateur radio events.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+
+    <h2>Contact MARC</h2>
+
+    <p>
+      Questions about the club, meetings or amateur radio in Michiana?
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:w9ab@w9ab.org">w9ab@w9ab.org</a>
+    </p>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>
+    Michiana Amateur Radio Club • W9AB
+  </p>
+
+  <p>
+    Mishawaka / South Bend, Indiana and the Michiana Area
+  </p>
+
+</footer>
+
+</body>
+</html>
