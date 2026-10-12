@@ -155,6 +155,32 @@ nav a:hover {
 }
 
 
+.upcoming {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-bottom: 35px;
+}
+.upcoming .card { border-top-color: #d59a20; }
+.upcoming .christmas-card { border-top-color: #a52c37; }
+.event-date { font-weight: bold; color: #173b5d; }
+.early-meeting {
+    background: #fff5cf;
+    border-left: 4px solid #e0ad00;
+    padding: 12px 15px;
+}
+.card .event-button {
+    display: inline-block;
+    background: #173b5d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+.christmas-card .event-button { background: #8f2632; }
+.event-button:hover { filter: brightness(1.15); }
+a:focus-visible { outline: 3px solid #e0ad00; outline-offset: 4px; }
+
 /* =========================
    CLUB PHOTO SECTION
    ========================= */
@@ -326,7 +352,9 @@ class="logo">
 
 <a href="#about">About MARC</a>
 
-<a href="#meetings">Meetings</a>
+<a href="meeting.html">Meetings</a>
+
+<a href="christmas.html">Christmas Party</a>
 
 <a href="#net">Club Net</a>
 
@@ -365,6 +393,27 @@ radio community in Michiana.
 </section>
 
 
+<!-- UPCOMING EVENTS -->
+<section class="upcoming" aria-label="Upcoming MARC programs and events">
+    <article class="card">
+        <h2>📻 October HT Workshop</h2>
+        <p class="event-date">Thursday, October 29, 2026 · 7:00 PM</p>
+        <h3>Introduction to ICS-205 &amp; HT Hand-Programming Workshop</h3>
+        <p>Learn to read an Incident Radio Communications Plan, then manually program its frequencies, offset, and tones into your own handheld radio.</p>
+        <p><strong>Bring your HT, a charged battery, and your radio’s manual!</strong> Participants who successfully complete the exercise will receive a training record documenting the radio-programming skills demonstrated.</p>
+        <p>Grace Brethren Church · Mishawaka</p>
+        <a class="event-button" href="meeting.html">Workshop details &amp; HT programming videos →</a>
+    </article>
+    <article class="card christmas-card">
+        <h2>🎄 MARC Christmas Party</h2>
+        <p class="event-date">Saturday, December 5, 2026 · 6:00 PM</p>
+        <p><strong>Michiana Walleye Association</strong><br>Mishawaka, Indiana</p>
+        <p>Join us for a Christmas potluck! The club will provide a meat dish and beverages. Everyone attending should bring a dish to share.</p>
+        <p><strong>No charge to attend.</strong><br>Please RSVP to Jeff Wyenegar by <strong>November 15.</strong></p>
+        <a class="event-button" href="christmas.html">Christmas Party details &amp; RSVP →</a>
+    </article>
+</section>
+
 <!-- INFORMATION CARDS -->
 
 <section class="cards">
@@ -381,9 +430,14 @@ Mishawaka, IN 46545
 </p>
 
 <p>
-MARC holds regular meetings featuring amateur radio programs,
-club activities and opportunities to meet other local operators.
+<strong>October 29 · 7:00 PM</strong><br>
+Introduction to ICS-205 &amp; HT Hand-Programming Workshop.
 </p>
+<p class="early-meeting"><strong>November 19 · 7:00 PM</strong><br>
+Building an Amateur Radio Go-Bag<br>
+<strong>One week earlier than normal due to Thanksgiving.</strong></p>
+<p>Prepare for events such as the Chicago Marathon, Marine Mud Run, Apple Cider Century, and Lights of Liberty, which begins November 20.</p>
+<p><a href="meeting.html">See October &amp; November meeting programs →</a></p>
 
 </div>
 
@@ -435,9 +489,8 @@ and other amateur radio activities throughout the year.
 <section class="club-feature">
 
 <img
-<img
 src="meeting-picture-1-YZ98GEljLgiWR0wz.jpg"
-alt="Michiana Amateur Radio Club members"
+alt="Michiana Amateur Radio Club members">
 
 <div class="feature-text">
 
